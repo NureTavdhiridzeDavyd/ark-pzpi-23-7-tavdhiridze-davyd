@@ -2,7 +2,7 @@
 
 Тавдгірідзе Давид
 
-Мова програмування: С#
+Правила оформлення програмного коду С#
 
 Обрані методи: 203 - Replace Error Code with Exception
                91 - Replace Method with Method Object

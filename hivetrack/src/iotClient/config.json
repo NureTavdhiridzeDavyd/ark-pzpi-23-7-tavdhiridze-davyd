@@ -1,0 +1,11 @@
+{
+  "serverUrl": "http://localhost:3000/api/iot/sessions",
+  "instructorId": "inst-1",
+  "groupId": "group-1",
+  "carId": "car-1",
+  "sendIntervalSec": 3,
+  "speedLimit": 60,
+  "k1": 5,
+  "k2": 7,
+  "k3": 3
+}

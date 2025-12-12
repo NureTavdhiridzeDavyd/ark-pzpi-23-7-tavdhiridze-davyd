@@ -1,0 +1,8 @@
+@"
+node_modules/
+.env
+dist/
+build/
+.DS_Store
+*.log
+"@ | Set-Content .\hivetrack\.gitignore -Encoding UTF8

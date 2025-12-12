@@ -5,7 +5,7 @@ module.exports = {
     version: '1.0.0',
     description: 'Документація REST API для HiveTrack. Авторизація для ЛБ3: X-User-Id.'
   },
-  servers: [{ url: 'http://localhost:3000' }],
+  servers: [{ url: '/' }],
 
   tags: [
     { name: 'Health' },

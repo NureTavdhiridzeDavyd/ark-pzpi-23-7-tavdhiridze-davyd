@@ -4,12 +4,13 @@
   "description": "Backend API for HiveTrack learning system",
   "main": "server.js",
   "scripts": {
-  "start": "node server.js",
-  "iot:demo": "node src/iotClient/client.js student-123"
-},
+    "start": "node server.js",
+    "iot:demo": "node src/iotClient/client.js student-123"
+  },
   "dependencies": {
     "bcryptjs": "^3.0.3",
     "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.11.0",

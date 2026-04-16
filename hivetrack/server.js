@@ -9,6 +9,7 @@ const lessonsController = require('./src/controllers/lessonsController');
 const groupsController = require('./src/controllers/groupsController');
 const attendanceController = require('./src/controllers/attendanceController');
 const adminController = require('./src/controllers/adminController');
+const authController = require('./src/controllers/authController');
 const iotController = require('./src/controllers/iotController');
 
 const { auth, requireRole } = require('./src/middleware/auth');
@@ -32,6 +33,8 @@ app.get('/', (req, res) => {
 
 app.get('/api/groups', groupsController.getAllGroups);
 app.post('/api/groups', auth, requireRole('Admin'), groupsController.createGroup);
+
+app.post('/api/auth/login', authController.login);
 
 app.get('/api/lessons/group/:groupId', lessonsController.getLessonsByGroup);
 app.post('/api/lessons', auth, requireRole('Instructor', 'Admin'), lessonsController.createLesson);

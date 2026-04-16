@@ -36,6 +36,31 @@ module.exports = {
         responses: { 200: { description: 'OK' } }
       }
     },
+    '/api/auth/login': {
+      post: {
+        tags: ['Auth'],
+        summary: 'Авторизація користувача',
+        requestBody: {
+          required: true,
+          content: {
+            'application/json': {
+              schema: {
+                type: 'object',
+                required: ['email', 'password'],
+                properties: {
+                  email: { type: 'string', example: 'ivan.ivanenko@autoschool.com' },
+                  password: { type: 'string', example: 'password' }
+                }
+              }
+            }
+          }
+        },
+        responses: {
+          200: { description: 'Успішний вхід' },
+          401: { description: 'Невірні облікові дані' }
+        }
+      }
+    },
 
     '/api/groups': {
       get: {
